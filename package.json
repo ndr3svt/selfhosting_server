@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "finalhandler": "^1.2.0",
+    "http-proxy": "^1.18.1",
+    "http2-proxy": "^5.0.53",
+    "http2-wrapper": "^2.2.0",
+    "ipware": "^2.0.0",
+    "node-fetch": "^2.6.11"
+  }
+}
