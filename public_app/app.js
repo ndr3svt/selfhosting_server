@@ -13,7 +13,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
+/* disabling the chache */
+app.use(express.static('public', {
+  maxAge: 0, // No caching
+  cacheControl: false, // Disable Cache-Control header
+}));
 app.use('/css', express.static('public/css'));
 app.use('/js', express.static('public/js'));
 app.listen(PORT, () => {

@@ -8,7 +8,7 @@ require('dotenv').config();
 
 
 let connection_index=0;
-const log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'w'});
+const log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'a'});
 const log_stdout = process.stdout;
 
 const customLog = function(d) {
