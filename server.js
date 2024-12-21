@@ -27,7 +27,6 @@ process.on('uncaughtException', (err, origin) => {
 });
 
 const certPath = process.env.CERT_PATH;
-console.log(certPath)
 
 
 
