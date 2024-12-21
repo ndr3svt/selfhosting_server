@@ -1,4 +1,10 @@
 {
+  "name": "selfhost",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "public_selfhosted_domain"
+  ],
   "dependencies": {
     "dotenv": "^16.4.7",
     "finalhandler": "^1.2.0",
