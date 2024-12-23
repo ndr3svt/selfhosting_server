@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "public_selfhosted_domain"
+    "public_selfhosted_domain",
+    "public_selfhosted_domain_cc"
   ],
+  "scripts": {
+    "dev:cc": "npm run dev -w public_selfhosted_domain_cc",
+    "build:css:cc": "npm run build:css -w public_selfhosted_domain_cc"
+  },
   "dependencies": {
     "dotenv": "^16.4.7",
     "finalhandler": "^1.2.0",

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deskflot - Rent Desk Space by the Hour</title>
+    <link rel="stylesheet" href="/css/styles_v1.css">
+</head>
+<body class="bg-background text-foreground">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="/" class="text-2xl font-bold tracking-tighter">
+                    deskflot
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm font-medium hover:text-primary">About</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-primary">Contact</a>
+                    <button class="bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-black/90 transition-colors">
+                        Request Demo
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobileMenuButton">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobileMenu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#about" class="block px-3 py-2 text-sm font-medium hover:text-primary">About</a>
+                    <a href="#contact" class="block px-3 py-2 text-sm font-medium hover:text-primary">Contact</a>
+                    <button class="w-full mt-2 bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-black/90 transition-colors">
+                        Request Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-16 md:pt-40 md:pb-24">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 -z-10 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
+                <div class="absolute left-1/2 top-0 -z-10 h-[1000px] w-[1000px] -translate-x-1/2 bg-gradient-radial from-primary/5 to-transparent"></div>
+            </div>
+
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary to-black bg-clip-text text-transparent">
+                        Find Your Perfect Workspace
+                    </h1>
+                    <p class="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+                        Rent desk space by the hour in homes, ateliers, coffee shops and offices near you. Work where inspiration strikes.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-black text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-black/90 transition-colors">
+                            Find a Desk
+                        </button>
+                        <button class="bg-white border border-black text-black px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-50 transition-colors">
+                            List Your Space
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Flexible Booking</h3>
+                    <p>Book by the hour, day, or week. No long-term commitments.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Verified Spaces</h3>
+                    <p>All workspaces are verified for quality and amenities.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Instant Access</h3>
+                    <p>Get immediate access to your workspace after booking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waitlist Form -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="max-w-md mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Join the Waitlist</h2>
+                <form id="waitlistForm" class="space-y-4">
+                    <div class="space-y-2">
+                        <label for="email" class="text-sm font-medium">Email</label>
+                        <input type="email" id="email" required 
+                               class="w-full rounded-md border border-input px-3 py-2">
+                    </div>
+                    <div class="space-y-2">
+                        <label for="type" class="text-sm font-medium">I want to...</label>
+                        <select id="type" required
+                                class="w-full rounded-md border border-input px-3 py-2">
+                            <option value="rent">Rent a desk</option>
+                            <option value="host">Host my space</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label for="location" class="text-sm font-medium">Preferred Location</label>
+                        <input type="text" id="location" required
+                               class="w-full rounded-md border border-input px-3 py-2">
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-black text-white hover:bg-black/90 px-4 py-2 rounded-md">
+                        Join Waitlist
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="/js/main.js"></script>
+
+    <div id="popup" class="fixed inset-0 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-all duration-300 ease-out">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/20 backdrop-blur-sm" id="popupBackdrop"></div>
+        
+        <!-- Popup Content -->
+        <div class="bg-white rounded-xl shadow-lg w-full max-w-sm mx-4 p-6 relative translate-y-8 transition-all duration-300 ease-out">
+            <button id="closePopup" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="text-center">
+                <div class="mb-4" id="popupIcon">
+                    <!-- Success Icon -->
+                    <svg class="w-12 h-12 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold mb-2" id="popupTitle">Success!</h3>
+                <p class="text-gray-600" id="popupMessage">Your action was completed successfully.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

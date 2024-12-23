@@ -1,0 +1,13 @@
+{
+  "ignore": [
+    "data/*",
+    "data/*.json",
+    "data/*.lock",
+    "public/css/styles_v1.css"
+  ],
+  "watch": [
+    "app.js",
+    "public/**/*",
+    "!public/css/styles_v1.css"
+  ]
+} 

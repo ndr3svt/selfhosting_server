@@ -83,7 +83,7 @@ const server = https.createServer(options, (req, res) => {
     if (req.headers.host.includes('deskflot.com')) {
         proxy.web(req, res, { target: 'http://localhost:3000' });
     } else if(req.headers.host.includes('deskflot.cc')) {
-        proxy.web(req, res, { target: 'http://localhost:4000' }); // replace with actual target
+        proxy.web(req, res, { target: 'http://localhost:4000' });
     } else {
         res.writeHead(200);
         res.end("hello world\n");
