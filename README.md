@@ -19,7 +19,7 @@ This solution is perfect for building and testing your products with close-to-ze
 
 ## Architecture
 
-/
+```/
 ├── server.js # Main reverse proxy server
 ├── package.json # Root dependencies
 ├── public_selfhosted_domain_cc/ # deskflot marketplace app
@@ -31,6 +31,7 @@ This solution is perfect for building and testing your products with close-to-ze
 │ ├── app.js
 │ └── ...
 └── README.md
+```
 
 ## Current Domains
 
