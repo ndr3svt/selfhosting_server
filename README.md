@@ -22,12 +22,12 @@ This solution is perfect for building and testing your products with close-to-ze
 ```/
 ├── server.js # Main reverse proxy server
 ├── package.json # Root dependencies
-├── public_selfhosted_domain_cc/ # deskflot marketplace app
+├── public_selfhosted_domain_cc/ # deskflot marketplace app with node js schadcn tailwind 
 │ ├── app.js # Marketplace server
 │ ├── public/ # Static assets
 │ ├── data/ # Local data storage (gitignored)
 │ └── package.json # App-specific dependencies
-├── [other_domain]/ # Other domain applications
+├── public_selfhosted_domain_cc/ # Other domain applications
 │ ├── app.js
 │ └── ...
 └── README.md
@@ -181,8 +181,8 @@ const domains = {
 
 ## Domain-Specific Documentation
 
-- [deskflot Marketplace Documentation](./public_selfhosted_domain_cc/README.md)
-- [Add more domain documentation links here]
+- [deskflot Marketplace Documentation more complex architecture](./public_selfhosted_domain_cc/README.md)
+- [simple demo domain with less complex architecture](./public_selfhosted_domain/README.md)
 
 ## Security Considerations
 
