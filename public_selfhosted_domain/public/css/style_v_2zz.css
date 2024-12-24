@@ -57,7 +57,8 @@ body, html {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
     font-style:italic;
     font-size:14px;
-    background-image: linear-gradient(#ffbbee, #ddddff);
+    /* background-image: linear-gradient(#ffbbee, #ddddff); */  
+    background-color: #ffffff;
     transition: height 0.125s ease-in;
     overflow: hidden;
 }
