@@ -1,1 +1,50 @@
- 
+{
+    "nav": {
+        "about": "About",
+        "contact": "Contact",
+        "requestDemo": "Request Demo"
+    },
+    "hero": {
+        "title": "Find Your Perfect Workspace",
+        "subtitle": "Rent desk space by the hour in homes, ateliers, coffee shops and offices near you. Work where inspiration strikes."
+    },
+    "cta": {
+        "findDesk": "Find a Desk",
+        "listSpace": "List Your Space"
+    },
+    "features": {
+        "flexible": {
+            "title": "Flexible Booking",
+            "description": "Book by the hour, day, or week. No long-term commitments."
+        },
+        "verified": {
+            "title": "Verified Spaces",
+            "description": "All workspaces are verified for quality and amenities."
+        },
+        "instant": {
+            "title": "Instant Access",
+            "description": "Get immediate access to your workspace after booking."
+        }
+    },
+    "waitlist": {
+        "title": "Join the Waitlist",
+        "email": "Email",
+        "type": {
+            "label": "I want to...",
+            "rent": "Rent a desk",
+            "host": "Host my space"
+        },
+        "location": "Preferred Location",
+        "submit": "Join Waitlist"
+    },
+    "popup": {
+        "success": {
+            "title": "Thank you!",
+            "message": "You've been added to our waitlist. We'll be in touch soon!"
+        },
+        "error": {
+            "title": "Oops!",
+            "message": "Something went wrong. Please try again later."
+        }
+    }
+} 

@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupMessage = document.getElementById('popupMessage');
     const popupIcon = document.getElementById('popupIcon');
 
-    const showPopup = (type, title, message) => {
-        // Set content
-        popupTitle.textContent = title;
-        popupMessage.textContent = message;
+    const showPopup = (type, titleKey, messageKey) => {
+        // Set content using translations
+        popupTitle.textContent = window.i18n.translate(`popup.${type}.title`);
+        popupMessage.textContent = window.i18n.translate(`popup.${type}.message`);
 
         // Set icon based on type
         if (type === 'success') {

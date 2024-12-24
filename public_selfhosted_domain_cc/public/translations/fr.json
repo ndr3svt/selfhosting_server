@@ -1,1 +1,50 @@
- 
+{
+    "nav": {
+        "about": "À propos",
+        "contact": "Contact",
+        "requestDemo": "Demander une démo"
+    },
+    "hero": {
+        "title": "Trouvez votre espace de travail idéal",
+        "subtitle": "Louez des espaces de bureau à l'heure dans des maisons, ateliers, cafés et bureaux près de chez vous. Travaillez là où l'inspiration vous frappe."
+    },
+    "cta": {
+        "findDesk": "Trouver un bureau",
+        "listSpace": "Proposer un espace"
+    },
+    "features": {
+        "flexible": {
+            "title": "Réservation flexible",
+            "description": "Réservez à l'heure, à la journée ou à la semaine. Sans engagement."
+        },
+        "verified": {
+            "title": "Espaces vérifiés",
+            "description": "Tous les espaces sont vérifiés pour leur qualité et leurs équipements."
+        },
+        "instant": {
+            "title": "Accès instantané",
+            "description": "Accédez immédiatement à votre espace après la réservation."
+        }
+    },
+    "waitlist": {
+        "title": "Rejoignez la liste d'attente",
+        "email": "Email",
+        "type": {
+            "label": "Je veux...",
+            "rent": "Louer un bureau",
+            "host": "Proposer mon espace"
+        },
+        "location": "Emplacement préféré",
+        "submit": "Rejoindre la liste"
+    },
+    "popup": {
+        "success": {
+            "title": "Merci !",
+            "message": "Vous avez été ajouté à notre liste d'attente. Nous vous contacterons bientôt !"
+        },
+        "error": {
+            "title": "Oups !",
+            "message": "Une erreur s'est produite. Veuillez réessayer plus tard."
+        }
+    }
+} 

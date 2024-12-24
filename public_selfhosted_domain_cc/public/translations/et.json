@@ -1,1 +1,50 @@
- 
+{
+    "nav": {
+        "about": "Meist",
+        "contact": "Kontakt",
+        "requestDemo": "Küsi demo"
+    },
+    "hero": {
+        "title": "Leia oma täiuslik töökoht",
+        "subtitle": "Rendi töölaud tunni kaupa kodudes, ateljeedes, kohvikutes ja kontorites sinu lähedal. Tööta seal, kus inspiratsioon sind tabab."
+    },
+    "cta": {
+        "findDesk": "Leia töölaud",
+        "listSpace": "Lisa ruum"
+    },
+    "features": {
+        "flexible": {
+            "title": "Paindlik broneerimine",
+            "description": "Broneeri tunni, päeva või nädala kaupa. Ilma pikaajaliste kohustusteta."
+        },
+        "verified": {
+            "title": "Kontrollitud ruumid",
+            "description": "Kõik töökohad on kvaliteedi ja mugavuste osas kontrollitud."
+        },
+        "instant": {
+            "title": "Kohene juurdepääs",
+            "description": "Saa kohene juurdepääs oma töökohale pärast broneerimist."
+        }
+    },
+    "waitlist": {
+        "title": "Liitu ootenimekirjaga",
+        "email": "E-post",
+        "type": {
+            "label": "Ma soovin...",
+            "rent": "Rentida töölauda",
+            "host": "Pakkuda oma ruumi"
+        },
+        "location": "Eelistatud asukoht",
+        "submit": "Liitu nimekirjaga"
+    },
+    "popup": {
+        "success": {
+            "title": "Aitäh!",
+            "message": "Sind on lisatud meie ootenimekirja. Võtame peagi ühendust!"
+        },
+        "error": {
+            "title": "Ups!",
+            "message": "Midagi läks valesti. Palun proovi hiljem uuesti."
+        }
+    }
+} 

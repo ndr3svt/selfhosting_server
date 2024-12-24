@@ -1,1 +1,50 @@
- 
+{
+    "nav": {
+        "about": "Chi siamo",
+        "contact": "Contatti",
+        "requestDemo": "Richiedi Demo"
+    },
+    "hero": {
+        "title": "Trova il tuo spazio di lavoro perfetto",
+        "subtitle": "Affitta postazioni di lavoro a ore in case, atelier, caffè e uffici vicino a te. Lavora dove ti ispira."
+    },
+    "cta": {
+        "findDesk": "Trova una postazione",
+        "listSpace": "Offri uno spazio"
+    },
+    "features": {
+        "flexible": {
+            "title": "Prenotazione flessibile",
+            "description": "Prenota per ora, giorno o settimana. Nessun impegno a lungo termine."
+        },
+        "verified": {
+            "title": "Spazi verificati",
+            "description": "Tutti gli spazi sono verificati per qualità e servizi."
+        },
+        "instant": {
+            "title": "Accesso istantaneo",
+            "description": "Ottieni accesso immediato al tuo spazio dopo la prenotazione."
+        }
+    },
+    "waitlist": {
+        "title": "Unisciti alla lista d'attesa",
+        "email": "Email",
+        "type": {
+            "label": "Voglio...",
+            "rent": "Affittare una postazione",
+            "host": "Offrire il mio spazio"
+        },
+        "location": "Posizione preferita",
+        "submit": "Unisciti alla lista"
+    },
+    "popup": {
+        "success": {
+            "title": "Grazie!",
+            "message": "Sei stato aggiunto alla nostra lista d'attesa. Ti contatteremo presto!"
+        },
+        "error": {
+            "title": "Ops!",
+            "message": "Qualcosa è andato storto. Per favore riprova più tardi."
+        }
+    }
+} 

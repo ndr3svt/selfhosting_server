@@ -1,1 +1,50 @@
- 
+{
+    "nav": {
+        "about": "Über uns",
+        "contact": "Kontakt",
+        "requestDemo": "Demo anfordern"
+    },
+    "hero": {
+        "title": "Finden Sie Ihren perfekten Arbeitsplatz",
+        "subtitle": "Mieten Sie stündlich Schreibtischplätze in Häusern, Ateliers, Cafés und Büros in Ihrer Nähe. Arbeiten Sie dort, wo die Inspiration Sie trifft."
+    },
+    "cta": {
+        "findDesk": "Schreibtisch finden",
+        "listSpace": "Raum anbieten"
+    },
+    "features": {
+        "flexible": {
+            "title": "Flexible Buchung",
+            "description": "Buchen Sie stundenweise, tageweise oder wöchentlich. Keine langfristigen Verpflichtungen."
+        },
+        "verified": {
+            "title": "Verifizierte Räume",
+            "description": "Alle Arbeitsplätze sind auf Qualität und Ausstattung geprüft."
+        },
+        "instant": {
+            "title": "Sofortiger Zugang",
+            "description": "Erhalten Sie sofortigen Zugang zu Ihrem Arbeitsplatz nach der Buchung."
+        }
+    },
+    "waitlist": {
+        "title": "Warteliste beitreten",
+        "email": "E-Mail",
+        "type": {
+            "label": "Ich möchte...",
+            "rent": "Einen Schreibtisch mieten",
+            "host": "Meinen Raum anbieten"
+        },
+        "location": "Bevorzugter Standort",
+        "submit": "Warteliste beitreten"
+    },
+    "popup": {
+        "success": {
+            "title": "Vielen Dank!",
+            "message": "Sie wurden zu unserer Warteliste hinzugefügt. Wir melden uns bald bei Ihnen!"
+        },
+        "error": {
+            "title": "Ups!",
+            "message": "Etwas ist schief gelaufen. Bitte versuchen Sie es später erneut."
+        }
+    }
+} 

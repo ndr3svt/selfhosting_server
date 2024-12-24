@@ -1,1 +1,50 @@
- 
+{
+    "nav": {
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "requestDemo": "Solicitar Demo"
+    },
+    "hero": {
+        "title": "Encuentra tu espacio de trabajo perfecto",
+        "subtitle": "Alquila espacios de trabajo por hora en casas, talleres, cafeterías y oficinas cerca de ti. Trabaja donde te inspire."
+    },
+    "cta": {
+        "findDesk": "Encontrar escritorio",
+        "listSpace": "Listar espacio"
+    },
+    "features": {
+        "flexible": {
+            "title": "Reserva flexible",
+            "description": "Reserva por hora, día o semana. Sin compromisos a largo plazo."
+        },
+        "verified": {
+            "title": "Espacios verificados",
+            "description": "Todos los espacios están verificados por calidad y comodidades."
+        },
+        "instant": {
+            "title": "Acceso instantáneo",
+            "description": "Obtén acceso inmediato a tu espacio después de reservar."
+        }
+    },
+    "waitlist": {
+        "title": "Únete a la lista de espera",
+        "email": "Correo electrónico",
+        "type": {
+            "label": "Quiero...",
+            "rent": "Alquilar un escritorio",
+            "host": "Ofrecer mi espacio"
+        },
+        "location": "Ubicación preferida",
+        "submit": "Unirse a la lista"
+    },
+    "popup": {
+        "success": {
+            "title": "¡Gracias!",
+            "message": "Has sido añadido a nuestra lista de espera. ¡Nos pondremos en contacto pronto!"
+        },
+        "error": {
+            "title": "¡Ups!",
+            "message": "Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+        }
+    }
+} 
