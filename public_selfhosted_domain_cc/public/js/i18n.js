@@ -14,7 +14,26 @@ class I18n {
         if (languageSelect) {
             languageSelect.value = this.currentLanguage;
             languageSelect.addEventListener('change', async (e) => {
-                await this.setLanguage(e.target.value);
+                const newLang = e.target.value;
+                const oldLang = this.currentLanguage;
+                await this.setLanguage(newLang);
+                
+                // Track language change event
+                try {
+                    await fetch('/api/track', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            type: 'language_change',
+                            from: oldLang,
+                            to: newLang
+                        })
+                    });
+                } catch (error) {
+                    console.error('Failed to track language change:', error);
+                }
             });
         }
 

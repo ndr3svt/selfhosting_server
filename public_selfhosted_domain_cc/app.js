@@ -34,14 +34,16 @@ const trackEvent = async (req, event) => {
   const analyticsPath = path.join(__dirname, 'data', 'analytics.json');
   
   try {
-    // Create event entry
+    // Create event entry with additional metadata
     const eventEntry = {
       timestamp: new Date().toISOString(),
       event,
       ip: req.ip,
       userAgent: req.headers['user-agent'],
       referer: req.headers.referer || 'direct',
-      path: req.path
+      path: req.path,
+      // Add language from request headers if available
+      language: req.headers['accept-language']?.split(',')[0] || 'unknown'
     };
 
     // Read file synchronously to avoid race conditions
@@ -73,9 +75,10 @@ initializeDataFiles().then(() => {
 
   // Middleware to track page visits
   app.use((req, res, next) => {
-    // Only track actual page visits, exclude assets and API calls
+    // Only track actual page visits, exclude assets, API calls, and translation files
     if (req.method === 'GET' && 
         !req.path.startsWith('/api/') && 
+        !req.path.startsWith('/translations/') &&
         !req.path.match(/\.(js|css|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/)) {
       trackEvent(req, {
         type: 'pageview',
@@ -133,6 +136,24 @@ initializeDataFiles().then(() => {
       });
 
       res.status(500).json({ error: 'Failed to join waitlist' });
+    }
+  });
+
+  // Add new tracking endpoint for client-side events
+  app.post('/api/track', async (req, res) => {
+    try {
+      const eventData = req.body;
+      
+      // Track the event
+      await trackEvent(req, {
+        type: eventData.type,
+        ...eventData
+      });
+
+      res.status(200).json({ success: true });
+    } catch (error) {
+      console.error('Error tracking event:', error);
+      res.status(500).json({ error: 'Failed to track event' });
     }
   });
 

@@ -92,4 +92,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Track navigation clicks
+    const trackNavClick = async (type) => {
+        try {
+            await fetch('/api/track', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    type: 'navigation_click',
+                    target: type
+                })
+            });
+        } catch (error) {
+            console.error('Failed to track navigation click:', error);
+        }
+    };
+
+    // Add click tracking to navigation items
+    document.querySelectorAll('a[href="#about"], a[href="#contact"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const type = e.target.getAttribute('href').replace('#', '');
+            trackNavClick(type);
+        });
+    });
+
+    // Track demo request clicks
+    document.querySelectorAll('[data-i18n="nav.requestDemo"]').forEach(button => {
+        button.addEventListener('click', () => {
+            trackNavClick('request_demo');
+        });
+    });
 }); 
