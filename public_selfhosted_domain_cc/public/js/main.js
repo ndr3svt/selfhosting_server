@@ -125,4 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
             trackNavClick('request_demo');
         });
     });
+
+    // Update copyright year
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        const currentYear = new Date().getFullYear();
+        if (currentYear > 2024) {
+            copyrightYear.textContent = `2024-${currentYear}`;
+        }
+    }
 }); 
