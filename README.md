@@ -27,8 +27,10 @@ This solution is perfect for building and testing your products with close-to-ze
 │ ├── public/ # Static assets
 │ ├── data/ # Local data storage (gitignored)
 │ └── package.json # App-specific dependencies
-├── public_selfhosted_domain_cc/ # Other domain applications
+├── public_selfhosted_domain/ # Other domain applications
 │ ├── app.js
+│ ├── public/ # Static assets
+│ └── package.json # App-specific dependencies
 │ └── ...
 └── README.md
 ```
@@ -55,8 +57,15 @@ cd self-hosting
 ```
 
 
-3. Install dependencies for each domain:
+3. Install dependencies
 
+global:
+```bash
+npm install
+```
+NOTE: as each individual application is under root/package.json as workspace, the npm install will spin off all the installations in the nested applications
+
+for each domain(example):
 ```bash
 # Install deskflot dependencies
 cd public_selfhosted_domain_cc
