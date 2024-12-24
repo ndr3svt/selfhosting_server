@@ -14,6 +14,7 @@ A modern marketplace application for renting desk spaces by the hour, built with
 
 ## Project Structure
 
+```/
 /public_selfhosted_domain_cc/
 ├── app.js                 # Express server and API endpoints
 ├── data/                  # Data storage (gitignored)
@@ -33,6 +34,7 @@ A modern marketplace application for renting desk spaces by the hour, built with
 │       └── et.json
 ├── package.json         # Dependencies and scripts
 └── README.md           # This file
+```
 
 ## Prerequisites
 
@@ -43,34 +45,41 @@ A modern marketplace application for renting desk spaces by the hour, built with
 ## Quick Start
 
 1. Install dependencies:
-npm install
+```npm install```
 
 2. Create data directory and initialize files:
+```bash
 mkdir -p data
 echo "[]" > data/analytics.json
 echo "[]" > data/waitlist.json
-
+```
 3. Start development server:
+```bash
 npm run dev
+```
 
 4. In a separate terminal, watch CSS changes:
+```bash
 npm run css:watch
+```
 
 The app will be available at http://localhost:4000
 
 ## Available Scripts
-
+```bash
 npm run dev - Start development server with hot reload
 npm run css:watch - Watch and compile CSS changes
 npm run css:build - Build CSS for production
 npm start - Start production server
+```
 
 ## Configuration
 
 Create a .env file in the project root:
-
+```env
 PORT=4000              # Application port
 NODE_ENV=development   # Environment (development/production)
+```
 
 ## Features Documentation
 
@@ -126,14 +135,17 @@ NODE_ENV=development   # Environment (development/production)
 ## Production Deployment
 
 1. Build assets:
+```bash
 npm run css:build
-
+```
 2. Set environment:
+```env
 NODE_ENV=production
-
+```
 3. Start server:
+```bash
 npm start
-
+```
 ## Security Considerations
 
 1. Data Storage
